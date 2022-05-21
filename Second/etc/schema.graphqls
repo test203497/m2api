@@ -1,0 +1,9 @@
+type Query{
+Grid : [getAllGrid] @resolver(class: "Restapi\\Second\\Model\\Resolver\\Grid") @doc(description: "Get All Grid")
+}
+type getAllGrid{
+id : Int @docs(description: "Primary Id"),
+name : String @docs(description: "Name Field"),
+image : String @docs(description : "Image Field"),
+status : Int @docs(description: "Status")
+}
